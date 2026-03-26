@@ -1,0 +1,68 @@
+import { getAuthState } from '$lib/stores/auth.svelte';
+
+async function request<T>(method: string, path: string, body?: unknown): Promise<T> {
+	const auth = getAuthState();
+	const headers: Record<string, string> = { 'Content-Type': 'application/json' };
+	if (auth.token) headers['Authorization'] = `Bearer ${auth.token}`;
+
+	const res = await fetch(path, {
+		method,
+		headers,
+		body: body ? JSON.stringify(body) : undefined
+	});
+	if (!res.ok) {
+		const err = await res.text();
+		throw new Error(err || `${res.status} ${res.statusText}`);
+	}
+	if (res.status === 204) return undefined as T;
+	return res.json();
+}
+
+export interface Room {
+	id: string;
+	name: string;
+	description: string;
+	createdBy: string;
+	createdAt: string;
+	memberCount: number;
+}
+
+export interface Message {
+	id: string;
+	senderId: string;
+	senderName: string;
+	content: string;
+	messageType: string;
+	createdAt: string;
+}
+
+export interface PageResponse<T> {
+	content: T[];
+	totalPages: number;
+	totalElements: number;
+	number: number;
+}
+
+export const createRoom = (name: string, description: string) =>
+	request<Room>('POST', '/api/rooms', { name, description });
+
+export const listRooms = () =>
+	request<Room[]>('GET', '/api/rooms');
+
+export const getRoom = (roomId: string) =>
+	request<Room>('GET', `/api/rooms/${roomId}`);
+
+export const joinRoom = (roomId: string) =>
+	request<void>('POST', `/api/rooms/${roomId}/join`);
+
+export const leaveRoom = (roomId: string) =>
+	request<void>('DELETE', `/api/rooms/${roomId}/leave`);
+
+export const getMessages = (roomId: string, page = 0, size = 50) =>
+	request<PageResponse<Message>>('GET', `/api/rooms/${roomId}/messages?page=${page}&size=${size}`);
+
+export const getUploadUrl = (roomId: string, fileName: string, contentType: string) =>
+	request<{ uploadUrl: string; s3Key: string }>('POST', '/api/files/presign-upload', { roomId, fileName, contentType });
+
+export const getDownloadUrl = (s3Key: string) =>
+	request<{ downloadUrl: string }>('GET', `/api/files/presign-download/${encodeURIComponent(s3Key)}`);
