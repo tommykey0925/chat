@@ -41,6 +41,9 @@ dependencies {
     implementation("org.flywaydb:flyway-core")
     implementation("org.flywaydb:flyway-database-postgresql")
 
+    // Elasticsearch
+    implementation("org.springframework.boot:spring-boot-starter-data-elasticsearch")
+
     // AWS
     implementation("io.awspring.cloud:spring-cloud-aws-starter-sqs")
     implementation("software.amazon.awssdk:s3")

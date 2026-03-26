@@ -14,9 +14,11 @@ import java.util.UUID;
 public class ChatService {
 
     private final ChatMessageRepository chatMessageRepository;
+    private final SearchService searchService;
 
-    public ChatService(ChatMessageRepository chatMessageRepository) {
+    public ChatService(ChatMessageRepository chatMessageRepository, SearchService searchService) {
         this.chatMessageRepository = chatMessageRepository;
+        this.searchService = searchService;
     }
 
     @Transactional
@@ -28,7 +30,13 @@ public class ChatService {
         message.setSenderName(senderName);
         message.setContent(content);
         message.setMessageType(messageType);
-        return chatMessageRepository.save(message);
+        var saved = chatMessageRepository.save(message);
+        try {
+            searchService.indexMessage(saved);
+        } catch (Exception e) {
+            // ES障害時もメッセージ送信は成功させる
+        }
+        return saved;
     }
 
     @Transactional(readOnly = true)

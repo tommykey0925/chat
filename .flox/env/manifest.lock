@@ -37,7 +37,9 @@
         "pkg-path": "terraform"
       }
     },
-    "hook": {},
+    "hook": {
+      "on-activate": "  if command -v docker &> /dev/null; then\n    docker compose -f \"$FLOX_ENV_PROJECT/docker-compose.yaml\" up -d --quiet-pull 2>/dev/null\n  fi\n"
+    },
     "profile": {},
     "options": {}
   },

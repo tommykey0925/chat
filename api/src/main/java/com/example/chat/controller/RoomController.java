@@ -5,6 +5,7 @@ import com.example.chat.model.dto.RoomRequest;
 import com.example.chat.model.dto.RoomResponse;
 import com.example.chat.service.ChatService;
 import com.example.chat.service.RoomService;
+import com.example.chat.service.SearchService;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -19,10 +20,12 @@ public class RoomController {
 
     private final RoomService roomService;
     private final ChatService chatService;
+    private final SearchService searchService;
 
-    public RoomController(RoomService roomService, ChatService chatService) {
+    public RoomController(RoomService roomService, ChatService chatService, SearchService searchService) {
         this.roomService = roomService;
         this.chatService = chatService;
+        this.searchService = searchService;
     }
 
     @PostMapping
@@ -63,5 +66,13 @@ public class RoomController {
                                              @RequestParam(defaultValue = "0") int page,
                                              @RequestParam(defaultValue = "50") int size) {
         return chatService.getMessages(roomId, page, size);
+    }
+
+    @GetMapping("/{roomId}/messages/search")
+    public Page<MessageResponse> searchMessages(@PathVariable UUID roomId,
+                                                @RequestParam String q,
+                                                @RequestParam(defaultValue = "0") int page,
+                                                @RequestParam(defaultValue = "50") int size) {
+        return searchService.searchMessages(roomId, q, page, size);
     }
 }

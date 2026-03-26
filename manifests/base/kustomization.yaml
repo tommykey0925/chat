@@ -8,6 +8,7 @@ resources:
   - deployment.yaml
   - service.yaml
   - ingress.yaml
+  - elasticsearch.yaml
 
 images:
   - name: chat-api
