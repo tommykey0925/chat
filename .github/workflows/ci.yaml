@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "api/**"
+      - "web/**"
+
+jobs:
+  test-api:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DeterminateSystems/nix-installer-action@main
+      - uses: flox/install-flox-action@main
+      - name: Run API tests
+        run: flox activate -- bash -c 'cd api && gradle test'
+
+  build-web:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DeterminateSystems/nix-installer-action@main
+      - uses: flox/install-flox-action@main
+      - name: Build web
+        run: flox activate -- bash -c 'cd web && pnpm install --frozen-lockfile && pnpm build'
