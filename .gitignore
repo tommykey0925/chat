@@ -4,6 +4,7 @@ api/.gradle/
 api/bin/
 *.class
 *.jar
+!api/gradle/wrapper/gradle-wrapper.jar
 
 # Terraform
 infra/.terraform/
