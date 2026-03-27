@@ -4,14 +4,16 @@ metadata:
   name: chat-api-config
   namespace: chat
 data:
-  SPRING_DATASOURCE_URL: jdbc:postgresql://DB_HOST_PLACEHOLDER:5432/chat
+  SPRING_DATASOURCE_URL: jdbc:postgresql://chat-db.ctkyuwaa0go8.ap-northeast-1.rds.amazonaws.com:5432/chat
   SPRING_DATASOURCE_USERNAME: chat
-  SPRING_DATA_REDIS_HOST: REDIS_HOST_PLACEHOLDER
+  SPRING_DATA_REDIS_HOST: chat-redis.j4pb6e.0001.apne1.cache.amazonaws.com
   SPRING_DATA_REDIS_PORT: "6379"
   AWS_REGION: ap-northeast-1
-  APP_S3_BUCKET: BUCKET_PLACEHOLDER
-  APP_SQS_QUEUE_URL: SQS_URL_PLACEHOLDER
-  COGNITO_ISSUER_URI: COGNITO_ISSUER_PLACEHOLDER
-  COGNITO_USER_POOL_ID: COGNITO_POOL_PLACEHOLDER
-  COGNITO_CLIENT_ID: COGNITO_CLIENT_PLACEHOLDER
+  APP_S3_BUCKET: chat-uploads-831963379503
+  APP_SQS_QUEUE_URL: https://sqs.ap-northeast-1.amazonaws.com/831963379503/chat-messages
+  COGNITO_ISSUER_URI: https://cognito-idp.ap-northeast-1.amazonaws.com/ap-northeast-1_qPedGpbby
+  COGNITO_USER_POOL_ID: ap-northeast-1_qPedGpbby
+  COGNITO_CLIENT_ID: 7vsovq6esg1am78jmk3diucc3q
+  APP_SQS_CHAT_MESSAGE_QUEUE: chat-messages
   SPRING_ELASTICSEARCH_URIS: http://elasticsearch:9200
+  SPRING_AUTOCONFIGURE_EXCLUDE: io.awspring.cloud.autoconfigure.sqs.SqsAutoConfiguration
