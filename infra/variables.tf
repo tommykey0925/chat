@@ -25,7 +25,7 @@ variable "vpc_name" {
 variable "alb_dns_name" {
   description = "DNS name of the ALB"
   type        = string
-  default     = "placeholder.ap-northeast-1.elb.amazonaws.com"
+  default     = "k8s-chat-chatapi-070b466019-221202486.ap-northeast-1.elb.amazonaws.com"
 }
 
 variable "db_username" {
