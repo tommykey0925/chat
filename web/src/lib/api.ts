@@ -68,4 +68,4 @@ export const getUploadUrl = (roomId: string, fileName: string, contentType: stri
 	request<{ uploadUrl: string; s3Key: string }>('POST', '/api/files/presign-upload', { roomId, fileName, contentType });
 
 export const getDownloadUrl = (s3Key: string) =>
-	request<{ downloadUrl: string }>('GET', `/api/files/presign-download/${encodeURIComponent(s3Key)}`);
+	request<{ downloadUrl: string }>('GET', `/api/files/presign-download/${s3Key}`);

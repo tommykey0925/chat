@@ -25,8 +25,9 @@ public class FileController {
         return fileService.generateUploadUrl(roomId, fileName, contentType);
     }
 
-    @GetMapping("/presign-download/{s3Key}")
-    public Map<String, String> presignDownload(@PathVariable String s3Key) {
+    @GetMapping("/presign-download/**")
+    public Map<String, String> presignDownload(jakarta.servlet.http.HttpServletRequest request) {
+        String s3Key = request.getRequestURI().replaceFirst("/api/files/presign-download/", "");
         String downloadUrl = fileService.generateDownloadUrl(s3Key);
         return Map.of("downloadUrl", downloadUrl);
     }
