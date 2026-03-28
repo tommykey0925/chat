@@ -37,6 +37,12 @@ data "aws_eks_cluster_auth" "existing" {
 
 data "aws_caller_identity" "current" {}
 
+data "aws_lb" "chat" {
+  tags = {
+    "ingress.k8s.aws/stack" = "chat/chat-api"
+  }
+}
+
 data "aws_security_groups" "eks_nodes" {
   filter {
     name   = "tag:aws:eks:cluster-name"

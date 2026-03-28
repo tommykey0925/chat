@@ -37,7 +37,7 @@ resource "aws_cloudfront_distribution" "chat" {
 
   # ALB origin for API
   origin {
-    domain_name = var.alb_dns_name
+    domain_name = data.aws_lb.chat.dns_name
     origin_id   = "alb-api"
 
     custom_origin_config {

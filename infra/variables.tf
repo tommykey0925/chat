@@ -22,11 +22,6 @@ variable "vpc_name" {
   default     = "url-shortener-vpc"
 }
 
-variable "alb_dns_name" {
-  description = "DNS name of the ALB"
-  type        = string
-  default     = "k8s-chat-chatapi-070b466019-221202486.ap-northeast-1.elb.amazonaws.com"
-}
 
 variable "db_username" {
   description = "Database master username"
