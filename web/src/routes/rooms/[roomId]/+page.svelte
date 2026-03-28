@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/state';
 	import { goto } from '$app/navigation';
-	import { getMessages, getRoom, getUploadUrl, leaveRoom, searchMessages, type Message, type Room } from '$lib/api';
+	import { getMessages, getRoom, getUploadUrl, getDownloadUrl, leaveRoom, searchMessages, type Message, type Room } from '$lib/api';
 	import { getAuthState } from '$lib/stores/auth.svelte';
 	import { connect, subscribe, send, disconnect, isConnected } from '$lib/websocket';
 
@@ -14,6 +14,7 @@
 	let searchQuery = $state('');
 	let searchResults = $state<Message[]>([]);
 	let searching = $state(false);
+	let imageUrls = $state<Record<string, string>>({});
 
 	const roomId = $derived(page.params.roomId);
 	const auth = getAuthState();
@@ -23,6 +24,7 @@
 			room = await getRoom(roomId);
 			const res = await getMessages(roomId);
 			messages = res.content.reverse();
+			messages.forEach(resolveImageUrl);
 			scrollToBottom();
 		} catch {
 			goto('/rooms');
@@ -38,6 +40,7 @@
 			subscribe(`/topic/room.${roomId}`, (msg) => {
 				const message: Message = JSON.parse(msg.body);
 				messages = [...messages, message];
+				resolveImageUrl(message);
 				scrollToBottom();
 			});
 		});
@@ -91,6 +94,17 @@
 		goto('/rooms');
 	}
 
+	async function resolveImageUrl(msg: Message) {
+		if (msg.messageType === 'IMAGE' && !imageUrls[msg.id]) {
+			try {
+				const { downloadUrl } = await getDownloadUrl(msg.content);
+				imageUrls[msg.id] = downloadUrl;
+			} catch {
+				// ignore
+			}
+		}
+	}
+
 	function isOwnMessage(msg: Message) {
 		return msg.senderId === auth.user?.sub;
 	}
@@ -106,7 +120,7 @@
 
 <div class="flex h-screen flex-col">
 	<!-- Header -->
-	<header class="flex items-center justify-between border-b border-zinc-800 px-4 py-3 sm:px-6">
+	<header class="sticky top-0 z-10 flex items-center justify-between border-b border-zinc-800 bg-zinc-950 px-4 py-3 sm:px-6">
 		<div class="flex items-center gap-3">
 			<a href="/rooms" class="text-zinc-500 hover:text-zinc-300">&larr;</a>
 			<h1 class="font-bold">
@@ -179,7 +193,11 @@
 					{#if msg.messageType === 'SYSTEM'}
 						<p class="text-xs italic text-zinc-500">{msg.content}</p>
 					{:else if msg.messageType === 'IMAGE'}
-						<p class="text-sm text-zinc-300">📷 画像</p>
+						{#if imageUrls[msg.id]}
+							<img src={imageUrls[msg.id]} alt="画像" class="max-w-full rounded" loading="lazy" />
+						{:else}
+							<p class="text-sm text-zinc-500">📷 読み込み中...</p>
+						{/if}
 					{:else if msg.messageType === 'FILE'}
 						<p class="text-sm text-zinc-300">📎 ファイル</p>
 					{:else}
