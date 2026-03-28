@@ -98,7 +98,7 @@
 		if (msg.messageType === 'IMAGE' && !imageUrls[msg.id]) {
 			try {
 				const { downloadUrl } = await getDownloadUrl(msg.content);
-				imageUrls[msg.id] = downloadUrl;
+				imageUrls = { ...imageUrls, [msg.id]: downloadUrl };
 			} catch {
 				// ignore
 			}
