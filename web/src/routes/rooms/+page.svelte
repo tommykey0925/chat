@@ -42,7 +42,7 @@
 
 <div class="flex min-h-screen flex-col">
 	<!-- Header -->
-	<header class="flex items-center justify-between border-b border-zinc-800 px-4 py-3 sm:px-6">
+	<header class="sticky top-0 z-10 flex items-center justify-between border-b border-zinc-800 bg-zinc-950 px-4 py-3 sm:px-6">
 		<h1 class="text-lg font-bold"><span class="text-emerald-400">#</span> チャットルーム</h1>
 		<button
 			onclick={() => (showCreate = !showCreate)}

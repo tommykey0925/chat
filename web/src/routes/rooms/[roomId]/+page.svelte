@@ -213,7 +213,7 @@
 	</div>
 
 	<!-- Input -->
-	<div class="border-t border-zinc-800 px-4 py-3 sm:px-6">
+	<div class="sticky bottom-0 z-10 border-t border-zinc-800 bg-zinc-950 px-4 py-3 sm:px-6">
 		<div class="flex items-center gap-2">
 			<button
 				onclick={() => fileInput.click()}
