@@ -27,6 +27,7 @@ resource "aws_cloudfront_distribution" "chat" {
   enabled             = true
   default_root_object = "index.html"
   price_class         = "PriceClass_200"
+  aliases             = ["chat.tommykeyapp.com"]
 
   # S3 origin for frontend static files
   origin {
@@ -134,7 +135,9 @@ resource "aws_cloudfront_distribution" "chat" {
   }
 
   viewer_certificate {
-    cloudfront_default_certificate = true
+    acm_certificate_arn      = data.aws_acm_certificate.wildcard.arn
+    ssl_support_method       = "sni-only"
+    minimum_protocol_version = "TLSv1.2_2021"
   }
 
   tags = {
