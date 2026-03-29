@@ -13,4 +13,4 @@ resources:
 images:
 - name: chat-api
   newName: 831963379503.dkr.ecr.ap-northeast-1.amazonaws.com/chat-api
-  newTag: a7e949acfac1902c9d385a45c15aa2e8202e7f13
+  newTag: 042eb5db311485618746de3fe41ce23c817df30f
