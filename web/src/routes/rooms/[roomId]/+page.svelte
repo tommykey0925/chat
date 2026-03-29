@@ -4,6 +4,8 @@
 	import { getMessages, getRoom, getUploadUrl, getDownloadUrl, leaveRoom, searchMessages, type Message, type Room } from '$lib/api';
 	import { getAuthState } from '$lib/stores/auth.svelte';
 	import { connect, subscribe, send, disconnect, isConnected } from '$lib/websocket';
+	import { HugeiconsIcon } from '@hugeicons/svelte';
+	import { Attachment01Icon, Image01Icon, SentIcon } from '@hugeicons/core-free-icons';
 
 	let room = $state<Room | null>(null);
 	let messages = $state<Message[]>([]);
@@ -196,10 +198,10 @@
 						{#if imageUrls[msg.id]}
 							<img src={imageUrls[msg.id]} alt="画像" class="max-w-full rounded" loading="lazy" />
 						{:else}
-							<p class="text-sm text-muted-foreground">📷 読み込み中...</p>
+							<p class="text-sm text-muted-foreground">読み込み中...</p>
 						{/if}
 					{:else if msg.messageType === 'FILE'}
-						<p class="text-sm text-foreground/80">📎 ファイル</p>
+						<p class="text-sm text-foreground/80">ファイル</p>
 					{:else}
 						<p class="text-sm text-foreground">{msg.content}</p>
 					{/if}
@@ -219,7 +221,7 @@
 				onclick={() => fileInput.click()}
 				class="rounded-lg p-2 text-muted-foreground hover:bg-muted hover:text-foreground/80"
 			>
-				📎
+				<HugeiconsIcon icon={Attachment01Icon} size={18} />
 			</button>
 			<input type="file" bind:this={fileInput} onchange={handleFileUpload} class="hidden" />
 			<input

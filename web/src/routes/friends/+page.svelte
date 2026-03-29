@@ -123,13 +123,13 @@
 		<div class="mb-4 flex gap-4 border-b border-border">
 			<button
 				onclick={() => (tab = 'friends')}
-				class="border-b-2 px-2 pb-2 text-sm {tab === 'friends' ? 'border-emerald-400 text-primary' : 'border-transparent text-muted-foreground hover:text-foreground/80'}"
+				class="border-b-2 px-2 pb-2 text-sm {tab === 'friends' ? 'border-primary text-primary' : 'border-transparent text-muted-foreground hover:text-foreground/80'}"
 			>
 				フレンド ({friends.length})
 			</button>
 			<button
 				onclick={() => (tab = 'requests')}
-				class="border-b-2 px-2 pb-2 text-sm {tab === 'requests' ? 'border-emerald-400 text-primary' : 'border-transparent text-muted-foreground hover:text-foreground/80'}"
+				class="border-b-2 px-2 pb-2 text-sm {tab === 'requests' ? 'border-primary text-primary' : 'border-transparent text-muted-foreground hover:text-foreground/80'}"
 			>
 				申請 ({requests.length})
 			</button>
