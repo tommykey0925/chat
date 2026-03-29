@@ -30,6 +30,9 @@ public class UserSyncFilter extends OncePerRequestFilter {
             Jwt jwt = jwtAuth.getToken();
             String sub = jwt.getSubject();
             String email = jwt.getClaimAsString("email");
+            if (email == null) {
+                email = jwt.getClaimAsString("username");
+            }
             if (sub != null && email != null) {
                 try {
                     userService.ensureUser(sub, email);
