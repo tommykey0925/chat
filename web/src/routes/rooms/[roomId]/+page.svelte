@@ -147,7 +147,7 @@
 
 	<!-- Search Panel -->
 	{#if showSearch}
-		<div class="border-b border-border bg-card/50 px-4 py-3 sm:px-6">
+		<div class="sticky top-[49px] z-10 border-b border-border bg-background px-4 py-3 sm:px-6">
 			<form onsubmit={(e) => { e.preventDefault(); handleSearch(); }} class="flex gap-2">
 				<input
 					type="text"

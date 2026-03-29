@@ -91,8 +91,8 @@
 			<div class="flex flex-col gap-3">
 				{#each rooms as room (room.id)}
 					<a href="/rooms/{room.id}" class="block">
-						<Card.Root class="transition hover:border-primary/30 hover:bg-card/80">
-							<Card.Content class="py-4">
+						<Card.Root class="py-3 gap-2 transition hover:border-primary/30 hover:bg-card/80">
+							<Card.Content>
 								<div class="flex items-center justify-between">
 									<h2 class="font-medium">
 										<span class="text-primary">#</span> {room.name}
