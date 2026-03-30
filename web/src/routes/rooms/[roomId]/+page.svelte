@@ -122,7 +122,7 @@
 
 <div class="flex h-screen flex-col">
 	<!-- Header -->
-	<header class="sticky top-0 z-10 flex items-center justify-between border-b border-border bg-background px-4 py-3 sm:px-6">
+	<header class="flex shrink-0 items-center justify-between border-b border-border bg-background px-4 py-3 sm:px-6">
 		<div class="flex items-center gap-3">
 			<a href="/rooms" class="text-muted-foreground hover:text-foreground/80">&larr;</a>
 			<h1 class="font-bold">
@@ -147,7 +147,7 @@
 
 	<!-- Search Panel -->
 	{#if showSearch}
-		<div class="sticky top-[49px] z-10 border-b border-border bg-background px-4 py-3 sm:px-6">
+		<div class="shrink-0 border-b border-border bg-background px-4 py-3 sm:px-6">
 			<form onsubmit={(e) => { e.preventDefault(); handleSearch(); }} class="flex gap-2">
 				<input
 					type="text"
@@ -215,7 +215,7 @@
 	</div>
 
 	<!-- Input -->
-	<div class="sticky bottom-0 z-10 border-t border-border bg-background px-4 py-3 sm:px-6">
+	<div class="shrink-0 border-t border-border bg-background px-4 py-3 sm:px-6">
 		<div class="flex items-center gap-2">
 			<button
 				onclick={() => fileInput.click()}
