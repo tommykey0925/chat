@@ -6,6 +6,8 @@ on:
     paths:
       - "api/**"
       - "web/**"
+  merge_group:
+    branches: [main]
 
 jobs:
   test-api:
