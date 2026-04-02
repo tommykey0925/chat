@@ -83,6 +83,13 @@ export interface UserInfo {
 	createdAt: string;
 }
 
+// Messages
+export const editMessage = (messageId: string, content: string) =>
+	request<Message>('PUT', `/api/messages/${messageId}`, { content });
+
+export const deleteMessage = (messageId: string) =>
+	request<void>('DELETE', `/api/messages/${messageId}`);
+
 export const getMe = () => request<UserInfo>('GET', '/api/users/me');
 
 export const updateProfile = (displayName: string) =>

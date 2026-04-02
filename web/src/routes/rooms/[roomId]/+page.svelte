@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/state';
 	import { goto } from '$app/navigation';
-	import { getMessages, getRoom, getUploadUrl, getDownloadUrl, leaveRoom, deleteRoom, searchMessages, type Message, type Room } from '$lib/api';
+	import { getMessages, getRoom, getUploadUrl, getDownloadUrl, leaveRoom, deleteRoom, searchMessages, editMessage, deleteMessage, type Message, type Room } from '$lib/api';
 	import { getAuthState } from '$lib/stores/auth.svelte';
 	import { untrack } from 'svelte';
 	import { subscribe, send, getWsState } from '$lib/websocket.svelte';
@@ -23,6 +23,8 @@
 	let totalPages = 1;
 	let loadingMore = $state(false);
 	let messagesContainer: HTMLDivElement;
+	let editingId = $state<string | null>(null);
+	let editContent = $state('');
 
 	const roomId = $derived(page.params.roomId);
 	const auth = getAuthState();
@@ -76,12 +78,42 @@
 	}
 
 	function subscribeToRoom() {
-		return subscribe(`/topic/room.${roomId}`, (msg) => {
+		const sub = subscribe(`/topic/room.${roomId}`, (msg) => {
 			const message: Message = JSON.parse(msg.body);
 			messages = [...messages, message];
 			resolveImageUrl(message);
 			scrollToBottom();
 		});
+		const updateSub = subscribe(`/topic/room.${roomId}.update`, (msg) => {
+			const updated: Message = JSON.parse(msg.body);
+			messages = messages.map((m) => (m.id === updated.id ? updated : m));
+		});
+		const deleteSub = subscribe(`/topic/room.${roomId}.delete`, (msg) => {
+			const { messageId } = JSON.parse(msg.body);
+			messages = messages.filter((m) => m.id !== messageId);
+		});
+		return { unsubscribe: () => { sub?.unsubscribe(); updateSub?.unsubscribe(); deleteSub?.unsubscribe(); } };
+	}
+
+	async function handleEdit(msg: Message) {
+		editingId = msg.id;
+		editContent = msg.content;
+	}
+
+	async function handleEditSave() {
+		if (!editingId || !editContent.trim()) return;
+		try {
+			await editMessage(editingId, editContent);
+			editingId = null;
+			editContent = '';
+		} catch { /* ignore */ }
+	}
+
+	async function handleDeleteMessage(msgId: string) {
+		if (!confirm('このメッセージを削除しますか？')) return;
+		try {
+			await deleteMessage(msgId);
+		} catch { /* ignore */ }
 	}
 
 	function handleSend() {
@@ -295,7 +327,21 @@
 					{:else if msg.messageType === 'FILE'}
 						<p class="text-sm text-foreground/80">ファイル</p>
 					{:else}
-						<p class="text-sm text-foreground">{msg.content}</p>
+						{#if editingId === msg.id}
+							<div class="flex gap-1">
+								<input type="text" bind:value={editContent} class="flex-1 rounded bg-background px-2 py-1 text-sm text-foreground" />
+								<button onclick={handleEditSave} class="text-xs text-primary">保存</button>
+								<button onclick={() => { editingId = null; }} class="text-xs text-muted-foreground">取消</button>
+							</div>
+						{:else}
+							<p class="text-sm text-foreground">{msg.content}</p>
+						{/if}
+					{/if}
+					{#if isOwnMessage(msg) && msg.messageType === 'TEXT' && editingId !== msg.id}
+						<div class="mt-1 flex gap-2">
+							<button onclick={() => handleEdit(msg)} class="text-[10px] text-muted-foreground/40 hover:text-muted-foreground">編集</button>
+							<button onclick={() => handleDeleteMessage(msg.id)} class="text-[10px] text-muted-foreground/40 hover:text-red-400">削除</button>
+						</div>
 					{/if}
 				</div>
 				<div class="mt-0.5 text-[10px] text-muted-foreground/60">
