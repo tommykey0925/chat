@@ -64,7 +64,7 @@
 	<Card.Root class="w-full max-w-sm">
 		<Card.Header class="text-center">
 			<Card.Title class="text-2xl">
-				<span class="text-primary">#</span> Chat
+				<span class="text-primary">#</span> chatto
 			</Card.Title>
 		</Card.Header>
 		<Card.Content>
