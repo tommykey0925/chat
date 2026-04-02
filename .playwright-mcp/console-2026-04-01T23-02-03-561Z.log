@@ -1,0 +1,93 @@
+[     325ms] [ERROR] Push notification setup failed: Error @ http://localhost:5190/src/lib/push.ts:20
+[     382ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5190/src/lib/websocket.svelte.ts:48
+[    5484ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5190/src/lib/websocket.svelte.ts:48
+[   10582ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5190/src/lib/websocket.svelte.ts:48
+[   16138ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5190/src/lib/websocket.svelte.ts:48
+[   20172ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:5190/@vite/client:864
+[   21012ms] [ERROR] Push notification setup failed: Error @ http://localhost:5190/src/lib/push.ts:20
+[   21013ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5190/ws." {file: "http://localhost:5190/node_modules/.vite/deps/@stomp_stompjs.js?v=c33fc525" line: 1107}] @ http://localhost:5190/node_modules/.vite/deps/@stomp_stompjs.js?v=c33fc525:1107
+[   26017ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5190/ws." {file: "http://localhost:5190/node_modules/.vite/deps/@stomp_stompjs.js?v=c33fc525" line: 1107}] @ http://localhost:5190/node_modules/.vite/deps/@stomp_stompjs.js?v=c33fc525:1107
+[   35904ms] [WARNING] The next HMR update will cause the page to reload @ http://localhost:5190/node_modules/.pnpm/@sveltejs+kit@2.55.0_@sveltejs+vite-plugin-svelte@6.2.4_svelte@5.55.0_vite@7.3.1_jiti@2_e81c5377ba9b49fffcc86979e80614ce/node_modules/@sveltejs/kit/src/runtime/client/client.js?v=c33fc525:3298
+[   35904ms] [ERROR] Error @ http://localhost:5190/@fs/home/tommykey0925/dev/chat/web/.svelte-kit/generated/client/app.js:23
+[   35905ms] [ERROR] [JavaScript Error: "Loading module from “http://localhost:5190/src/routes/+layout.svelte?t=1775084559308” was blocked because of a disallowed MIME type (“”)." {file: "http://localhost:5190/rooms" line: 0}] @ http://localhost:5190/rooms:0
+[   35906ms] [WARNING] [JavaScript Warning: "Loading failed for the module with source “http://localhost:5190/src/routes/+layout.svelte?t=1775084559308”." {file: "http://localhost:5190/.svelte-kit/generated/client/nodes/0.js?t=1775084559308" line: 0}] @ http://localhost:5190/.svelte-kit/generated/client/nodes/0.js?t=1775084559308:0
+[   35907ms] TypeError: error loading dynamically imported module: http://localhost:5190/src/routes/+layout.svelte?t=1775084559308
+
+[   35907ms] TypeError: error loading dynamically imported module: http://localhost:5190/src/routes/+layout.svelte?t=1775084559308
+    at start (http://localhost:5190/node_modules/.pnpm/@sveltejs+kit@2.55.0_@sveltejs+vite-plugin-svelte@6.2.4_svelte@5.55.0_vite@7.3.1_jiti@2_e81c5377ba9b49fffcc86979e80614ce/node_modules/@sveltejs/kit/src/runtime/client/client.js?v=c33fc525:373:9)
+    at async* (http://localhost:5190/rooms:23:11)
+    at promise callback* (http://localhost:5190/rooms:22:9)
+[ 1047848ms] [ERROR] [vite] Error @ http://localhost:5190/@vite/client:808
+[ 1047849ms] [ERROR] [vite] Failed to reload /src/app.css. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5190/@vite/client:808
+[ 1047849ms] [WARNING] [JavaScript Warning: "Loading failed for the module with source “http://localhost:5190/src/app.css?t=1775085571382”." {file: "http://localhost:5190/@vite/client" line: 0}] @ http://localhost:5190/@vite/client:0
+[ 1047849ms] [ERROR] [vite] Error @ http://localhost:5190/@vite/client:808
+[ 1047849ms] [ERROR] [vite] Failed to reload /src/routes/rooms/+page.svelte. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5190/@vite/client:808
+[ 1047849ms] [WARNING] [JavaScript Warning: "Loading failed for the module with source “http://localhost:5190/src/routes/rooms/+page.svelte?t=1775085571382”." {file: "http://localhost:5190/@vite/client" line: 0}] @ http://localhost:5190/@vite/client:0
+[ 1047849ms] TypeError: can't access property "default", module is undefined
+
+[ 1048067ms] [WARNING] The next HMR update will cause the page to reload @ http://localhost:5190/node_modules/.pnpm/@sveltejs+kit@2.55.0_@sveltejs+vite-plugin-svelte@6.2.4_svelte@5.55.0_vite@7.3.1_jiti@2_e81c5377ba9b49fffcc86979e80614ce/node_modules/@sveltejs/kit/src/runtime/client/client.js?v=c33fc525:3298
+[ 1048068ms] [ERROR] Error @ http://localhost:5190/@fs/home/tommykey0925/dev/chat/web/.svelte-kit/generated/client/app.js:23
+[ 1048068ms] Svelte error: rune_outside_svelte
+The `$state` rune is only available inside `.svelte` and `.svelte.js/ts` files
+https://svelte.dev/e/rune_outside_svelte
+
+[ 1048069ms] Svelte error: rune_outside_svelte
+The `$state` rune is only available inside `.svelte` and `.svelte.js/ts` files
+https://svelte.dev/e/rune_outside_svelte
+    at start (http://localhost:5190/node_modules/.pnpm/@sveltejs+kit@2.55.0_@sveltejs+vite-plugin-svelte@6.2.4_svelte@5.55.0_vite@7.3.1_jiti@2_e81c5377ba9b49fffcc86979e80614ce/node_modules/@sveltejs/kit/src/runtime/client/client.js?v=c33fc525:373:9)
+    at async* (http://localhost:5190/rooms:23:11)
+    at promise callback* (http://localhost:5190/rooms:22:9)
+[ 1053324ms] [ERROR] [vite] Error @ http://localhost:5190/@vite/client:808
+[ 1053324ms] [ERROR] [vite] Failed to reload /src/app.css. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5190/@vite/client:808
+[ 1053324ms] [WARNING] [JavaScript Warning: "Loading failed for the module with source “http://localhost:5190/src/app.css?t=1775085576873”." {file: "http://localhost:5190/@vite/client" line: 0}] @ http://localhost:5190/@vite/client:0
+[ 1053325ms] [ERROR] [vite] Error @ http://localhost:5190/@vite/client:808
+[ 1053325ms] [ERROR] [vite] Failed to reload /src/routes/rooms/+page.svelte. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5190/@vite/client:808
+[ 1053326ms] [WARNING] [JavaScript Warning: "Loading failed for the module with source “http://localhost:5190/src/routes/rooms/+page.svelte?t=1775085576873”." {file: "http://localhost:5190/@vite/client" line: 0}] @ http://localhost:5190/@vite/client:0
+[ 1053326ms] TypeError: can't access property "default", module is undefined
+
+[ 1053659ms] [WARNING] The next HMR update will cause the page to reload @ http://localhost:5190/node_modules/.pnpm/@sveltejs+kit@2.55.0_@sveltejs+vite-plugin-svelte@6.2.4_svelte@5.55.0_vite@7.3.1_jiti@2_e81c5377ba9b49fffcc86979e80614ce/node_modules/@sveltejs/kit/src/runtime/client/client.js?v=c33fc525:3298
+[ 1053659ms] [ERROR] Error @ http://localhost:5190/@fs/home/tommykey0925/dev/chat/web/.svelte-kit/generated/client/app.js:23
+[ 1053666ms] Svelte error: rune_outside_svelte
+The `$state` rune is only available inside `.svelte` and `.svelte.js/ts` files
+https://svelte.dev/e/rune_outside_svelte
+
+[ 1053666ms] Svelte error: rune_outside_svelte
+The `$state` rune is only available inside `.svelte` and `.svelte.js/ts` files
+https://svelte.dev/e/rune_outside_svelte
+    at start (http://localhost:5190/node_modules/.pnpm/@sveltejs+kit@2.55.0_@sveltejs+vite-plugin-svelte@6.2.4_svelte@5.55.0_vite@7.3.1_jiti@2_e81c5377ba9b49fffcc86979e80614ce/node_modules/@sveltejs/kit/src/runtime/client/client.js?v=c33fc525:373:9)
+    at async* (http://localhost:5190/rooms:23:11)
+    at promise callback* (http://localhost:5190/rooms:22:9)
+[ 1061029ms] [WARNING] The next HMR update will cause the page to reload @ http://localhost:5190/node_modules/.pnpm/@sveltejs+kit@2.55.0_@sveltejs+vite-plugin-svelte@6.2.4_svelte@5.55.0_vite@7.3.1_jiti@2_e81c5377ba9b49fffcc86979e80614ce/node_modules/@sveltejs/kit/src/runtime/client/client.js?v=c33fc525:3298
+[ 1061029ms] [ERROR] Error @ http://localhost:5190/@fs/home/tommykey0925/dev/chat/web/.svelte-kit/generated/client/app.js:23
+[ 1061030ms] [ERROR] [JavaScript Error: "Loading module from “http://localhost:5190/src/lib/websocket.ts?t=1775085584539” was blocked because of a disallowed MIME type (“text/html”)." {file: "http://localhost:5190/rooms" line: 0}] @ http://localhost:5190/rooms:0
+[ 1061030ms] [WARNING] [JavaScript Warning: "Loading failed for the module with source “http://localhost:5190/src/lib/websocket.ts?t=1775085584539”." {file: "http://localhost:5190/src/routes/+layout.svelte?t=1775085584539" line: 0}] @ http://localhost:5190/src/routes/+layout.svelte?t=1775085584539:0
+[ 1061030ms] TypeError: error loading dynamically imported module: http://localhost:5190/src/lib/websocket.ts?t=1775085584539
+
+[ 1061031ms] TypeError: error loading dynamically imported module: http://localhost:5190/src/lib/websocket.ts?t=1775085584539
+    at start (http://localhost:5190/node_modules/.pnpm/@sveltejs+kit@2.55.0_@sveltejs+vite-plugin-svelte@6.2.4_svelte@5.55.0_vite@7.3.1_jiti@2_e81c5377ba9b49fffcc86979e80614ce/node_modules/@sveltejs/kit/src/runtime/client/client.js?v=c33fc525:373:9)
+    at async* (http://localhost:5190/rooms:23:11)
+    at promise callback* (http://localhost:5190/rooms:22:9)
+[ 1087008ms] [ERROR] [JavaScript Error: "Loading module from “http://localhost:5190/src/lib/websocket.ts?t=1775085584539” was blocked because of a disallowed MIME type (“text/html”)." {file: "http://localhost:5190/rooms" line: 0}] @ http://localhost:5190/rooms:0
+[ 1087009ms] [WARNING] The next HMR update will cause the page to reload @ http://localhost:5190/node_modules/.pnpm/@sveltejs+kit@2.55.0_@sveltejs+vite-plugin-svelte@6.2.4_svelte@5.55.0_vite@7.3.1_jiti@2_e81c5377ba9b49fffcc86979e80614ce/node_modules/@sveltejs/kit/src/runtime/client/client.js?v=c33fc525:3298
+[ 1087009ms] [ERROR] Error @ http://localhost:5190/@fs/home/tommykey0925/dev/chat/web/.svelte-kit/generated/client/app.js:23
+[ 1087014ms] [WARNING] [JavaScript Warning: "Loading failed for the module with source “http://localhost:5190/src/lib/websocket.ts?t=1775085584539”." {file: "http://localhost:5190/src/routes/+layout.svelte?t=1775085610408" line: 0}] @ http://localhost:5190/src/routes/+layout.svelte?t=1775085610408:0
+[ 1087015ms] TypeError: error loading dynamically imported module: http://localhost:5190/src/lib/websocket.ts?t=1775085584539
+
+[ 1087015ms] TypeError: error loading dynamically imported module: http://localhost:5190/src/lib/websocket.ts?t=1775085584539
+    at start (http://localhost:5190/node_modules/.pnpm/@sveltejs+kit@2.55.0_@sveltejs+vite-plugin-svelte@6.2.4_svelte@5.55.0_vite@7.3.1_jiti@2_e81c5377ba9b49fffcc86979e80614ce/node_modules/@sveltejs/kit/src/runtime/client/client.js?v=c33fc525:373:9)
+    at async* (http://localhost:5190/rooms:23:11)
+    at promise callback* (http://localhost:5190/rooms:22:9)
+[ 1111008ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5190/ws." {file: "http://localhost:5190/node_modules/.vite/deps/@stomp_stompjs.js?v=c33fc525" line: 1107}] @ http://localhost:5190/node_modules/.vite/deps/@stomp_stompjs.js?v=c33fc525:1107
+[ 1111008ms] [ERROR] Push notification setup failed: Error @ http://localhost:5190/src/lib/push.ts?t=1775085576983:20
+[ 1116027ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5190/ws." {file: "http://localhost:5190/node_modules/.vite/deps/@stomp_stompjs.js?v=c33fc525" line: 1107}] @ http://localhost:5190/node_modules/.vite/deps/@stomp_stompjs.js?v=c33fc525:1107
+[ 1121032ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5190/ws." {file: "http://localhost:5190/node_modules/.vite/deps/@stomp_stompjs.js?v=c33fc525" line: 1107}] @ http://localhost:5190/node_modules/.vite/deps/@stomp_stompjs.js?v=c33fc525:1107
+[ 1126037ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5190/ws." {file: "http://localhost:5190/node_modules/.vite/deps/@stomp_stompjs.js?v=c33fc525" line: 1107}] @ http://localhost:5190/node_modules/.vite/deps/@stomp_stompjs.js?v=c33fc525:1107
+[ 1131041ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5190/ws." {file: "http://localhost:5190/node_modules/.vite/deps/@stomp_stompjs.js?v=c33fc525" line: 1107}] @ http://localhost:5190/node_modules/.vite/deps/@stomp_stompjs.js?v=c33fc525:1107
+[ 1136053ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5190/ws." {file: "http://localhost:5190/node_modules/.vite/deps/@stomp_stompjs.js?v=c33fc525" line: 1107}] @ http://localhost:5190/node_modules/.vite/deps/@stomp_stompjs.js?v=c33fc525:1107
+[ 1141057ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5190/ws." {file: "http://localhost:5190/node_modules/.vite/deps/@stomp_stompjs.js?v=c33fc525" line: 1107}] @ http://localhost:5190/node_modules/.vite/deps/@stomp_stompjs.js?v=c33fc525:1107
+[ 1146061ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5190/ws." {file: "http://localhost:5190/node_modules/.vite/deps/@stomp_stompjs.js?v=c33fc525" line: 1107}] @ http://localhost:5190/node_modules/.vite/deps/@stomp_stompjs.js?v=c33fc525:1107
+[ 1152260ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5190/ws." {file: "http://localhost:5190/node_modules/.vite/deps/@stomp_stompjs.js?v=c33fc525" line: 1107}] @ http://localhost:5190/node_modules/.vite/deps/@stomp_stompjs.js?v=c33fc525:1107
+[ 1161558ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5190/ws." {file: "http://localhost:5190/node_modules/.vite/deps/@stomp_stompjs.js?v=c33fc525" line: 1107}] @ http://localhost:5190/node_modules/.vite/deps/@stomp_stompjs.js?v=c33fc525:1107
+[ 1175051ms] [ERROR] Push notification setup failed: Error @ http://localhost:5190/src/lib/push.ts?t=1775085576983:20
+[ 1175502ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5190/ws." {file: "http://localhost:5190/node_modules/.vite/deps/@stomp_stompjs.js?v=c33fc525" line: 1107}] @ http://localhost:5190/node_modules/.vite/deps/@stomp_stompjs.js?v=c33fc525:1107
+[ 1188021ms] [ERROR] Push notification setup failed: Error @ http://localhost:5190/src/lib/push.ts?t=1775085576983:20

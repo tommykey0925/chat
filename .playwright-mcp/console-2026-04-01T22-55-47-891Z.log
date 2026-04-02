@@ -1,0 +1,11 @@
+[    3877ms] [ERROR] [vite] Error @ http://localhost:5173/@vite/client:808
+[    3878ms] [ERROR] [vite] Failed to reload /src/app.css. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:808
+[    3878ms] [WARNING] [JavaScript Warning: "Loading failed for the module with source “http://localhost:5173/src/app.css?t=1775084151763”." {file: "http://localhost:5173/@vite/client" line: 0}] @ http://localhost:5173/@vite/client:0
+[    3879ms] [ERROR] [vite] Error @ http://localhost:5173/@vite/client:808
+[    3879ms] [ERROR] [vite] Failed to reload /src/lib/components/Sidebar.svelte. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:808
+[    3879ms] [ERROR] [vite] Error @ http://localhost:5173/@vite/client:808
+[    3879ms] [ERROR] [vite] Failed to reload /src/routes/+layout.svelte. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:808
+[    3879ms] [WARNING] [JavaScript Warning: "Loading failed for the module with source “http://localhost:5173/src/lib/components/Sidebar.svelte?t=1775084151763”." {file: "http://localhost:5173/@vite/client" line: 0}] @ http://localhost:5173/@vite/client:0
+[    3879ms] [WARNING] [JavaScript Warning: "Loading failed for the module with source “http://localhost:5173/src/routes/+layout.svelte?t=1775084151763”." {file: "http://localhost:5173/@vite/client" line: 0}] @ http://localhost:5173/@vite/client:0
+[    3880ms] TypeError: can't access property "default", module is undefined
+

@@ -1,0 +1,26 @@
+[    1334ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1335ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1335ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1335ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1336ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1336ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1336ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1336ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1337ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1337ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1337ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1337ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1337ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1338ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1338ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1338ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1338ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1338ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1451ms] Svelte error: effect_update_depth_exceeded
+Maximum update depth exceeded. This typically indicates that an effect reads and writes the same piece of state
+https://svelte.dev/e/effect_update_depth_exceeded
+    at start (http://localhost:5173/node_modules/.pnpm/@sveltejs+kit@2.55.0_@sveltejs+vite-plugin-svelte@6.2.4_svelte@5.55.0_vite@7.3.1_jiti@2_e81c5377ba9b49fffcc86979e80614ce/node_modules/@sveltejs/kit/src/runtime/client/client.js?v=3ceb9e86:373:9)
+    at async* (http://localhost:5173/rooms/test-room-id:23:11)
+    at promise callback* (http://localhost:5173/rooms/test-room-id:22:9)
+[    2199ms] [ERROR] Push notification setup failed: Error @ http://localhost:5173/src/lib/push.ts?t=1775080977846:20
+[    3067ms] [ERROR] Push notification setup failed: Error @ http://localhost:5173/src/lib/push.ts?t=1775080977846:20

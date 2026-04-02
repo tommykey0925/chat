@@ -1,0 +1,32 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: R
+      - generic [ref=e7]: Receipto
+    - navigation [ref=e8]:
+      - link "ダッシュボード" [ref=e9] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e10]
+        - text: ダッシュボード
+      - link "支出一覧" [ref=e11] [cursor=pointer]:
+        - /url: /expenses
+        - img [ref=e12]
+        - text: 支出一覧
+      - link "レシート撮影" [ref=e13] [cursor=pointer]:
+        - /url: /upload
+        - img [ref=e14]
+        - text: レシート撮影
+      - link "予算管理" [ref=e15] [cursor=pointer]:
+        - /url: /budget
+        - img [ref=e16]
+        - text: 予算管理
+      - link "設定" [ref=e17] [cursor=pointer]:
+        - /url: /settings
+        - img [ref=e18]
+        - text: 設定
+    - button "ログアウト" [ref=e20]:
+      - img [ref=e21]
+      - text: ログアウト
+  - main [ref=e22]:
+    - heading "404" [level=1] [ref=e23]
+    - paragraph [ref=e24]: Not Found

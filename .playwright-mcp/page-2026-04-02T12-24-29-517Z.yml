@@ -1,0 +1,11 @@
+- generic [ref=e2]:
+  - generic [ref=e18]:
+    - banner [ref=e19]:
+      - generic [ref=e20]:
+        - heading "# チャットルーム" [level=1] [ref=e21]
+        - link "フレンド" [ref=e22] [cursor=pointer]:
+          - /url: /friends
+      - button "新規作成" [ref=e23]
+    - main [ref=e24]:
+      - paragraph [ref=e27]: まだルームがありません。作成してみましょう
+  - generic [ref=e17]: Chat

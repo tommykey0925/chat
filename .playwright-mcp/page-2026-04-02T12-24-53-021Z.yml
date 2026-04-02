@@ -1,0 +1,19 @@
+- generic [ref=e2]:
+  - generic [ref=e45]:
+    - banner [ref=e46]:
+      - generic [ref=e47]:
+        - link "←" [ref=e48] [cursor=pointer]:
+          - /url: /rooms
+        - heading "# kaeth0925" [level=1] [ref=e49]
+      - generic [ref=e50]:
+        - button "検索" [ref=e51]
+        - button "退出" [ref=e52]
+    - generic [ref=e54]:
+      - paragraph [ref=e56]: やぁ
+      - generic [ref=e57]: 17:15
+    - generic [ref=e59]:
+      - button [ref=e60]:
+        - img [ref=e61]
+      - textbox "メッセージを入力..." [ref=e63]
+      - button "送信" [disabled] [ref=e64]
+  - generic [ref=e17]: Chat

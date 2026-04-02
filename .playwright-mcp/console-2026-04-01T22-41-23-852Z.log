@@ -1,0 +1,9 @@
+[     360ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775082873959:19
+[    5460ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775082873959:19
+[   10558ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775082873959:19
+[   16139ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775082873959:19
+[   21261ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775082873959:19
+[   26357ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775082873959:19
+[   31450ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775082873959:19
+[   36554ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775082873959:19
+[   41666ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775082873959:19

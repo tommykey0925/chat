@@ -1,0 +1,4 @@
+[     913ms] [ERROR] Push notification setup failed: Error @ http://localhost:5190/src/lib/push.ts:20
+[    1179ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5190/src/lib/websocket.svelte.ts:48
+[    6283ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5190/src/lib/websocket.svelte.ts:48
+[   11388ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5190/src/lib/websocket.svelte.ts:48

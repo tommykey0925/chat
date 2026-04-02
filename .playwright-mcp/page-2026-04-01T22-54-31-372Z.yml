@@ -1,0 +1,15 @@
+- generic [ref=e4]:
+  - banner [ref=e5]:
+    - generic [ref=e6]:
+      - link "←" [ref=e7] [cursor=pointer]:
+        - /url: /rooms
+      - heading "# テストルーム" [level=1] [ref=e8]
+    - generic [ref=e9]:
+      - button "検索" [ref=e10]
+      - button "退出" [ref=e11]
+  - paragraph [ref=e13]: メッセージはまだありません
+  - generic [ref=e15]:
+    - button [ref=e16]:
+      - img [ref=e17]
+    - textbox "メッセージを入力..." [ref=e19]
+    - button "送信" [disabled] [ref=e20]

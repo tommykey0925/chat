@@ -1,0 +1,12 @@
+[     209ms] [WARNING] The next HMR update will cause the page to reload @ http://localhost:5173/node_modules/.pnpm/@sveltejs+kit@2.55.0_@sveltejs+vite-plugin-svelte@6.2.4_svelte@5.55.0_vite@7.3.1_jiti@2_e81c5377ba9b49fffcc86979e80614ce/node_modules/@sveltejs/kit/src/runtime/client/client.js?v=3ceb9e86:3298
+[     209ms] [ERROR] Error @ http://localhost:5173/@fs/home/tommykey0925/dev/chat/web/.svelte-kit/generated/client/app.js:23
+[     211ms] Svelte error: rune_outside_svelte
+The `$state` rune is only available inside `.svelte` and `.svelte.js/ts` files
+https://svelte.dev/e/rune_outside_svelte
+
+[     211ms] Svelte error: rune_outside_svelte
+The `$state` rune is only available inside `.svelte` and `.svelte.js/ts` files
+https://svelte.dev/e/rune_outside_svelte
+    at start (http://localhost:5173/node_modules/.pnpm/@sveltejs+kit@2.55.0_@sveltejs+vite-plugin-svelte@6.2.4_svelte@5.55.0_vite@7.3.1_jiti@2_e81c5377ba9b49fffcc86979e80614ce/node_modules/@sveltejs/kit/src/runtime/client/client.js?v=3ceb9e86:373:9)
+    at async* (http://localhost:5173/:23:11)
+    at promise callback* (http://localhost:5173/:22:9)

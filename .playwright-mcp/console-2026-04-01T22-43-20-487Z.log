@@ -1,0 +1,149 @@
+[    1774ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1775ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1775ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1775ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1775ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1775ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1775ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1775ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1776ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1776ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1776ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1776ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1776ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1777ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1777ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1777ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1778ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1778ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1874ms] Svelte error: effect_update_depth_exceeded
+Maximum update depth exceeded. This typically indicates that an effect reads and writes the same piece of state
+https://svelte.dev/e/effect_update_depth_exceeded
+    at start (http://localhost:5173/node_modules/.pnpm/@sveltejs+kit@2.55.0_@sveltejs+vite-plugin-svelte@6.2.4_svelte@5.55.0_vite@7.3.1_jiti@2_e81c5377ba9b49fffcc86979e80614ce/node_modules/@sveltejs/kit/src/runtime/client/client.js?v=3ceb9e86:373:9)
+    at async* (http://localhost:5173/rooms/11111111-1111-1111-1111-111111111111:23:11)
+    at promise callback* (http://localhost:5173/rooms/11111111-1111-1111-1111-111111111111:22:9)
+[    2785ms] [ERROR] Push notification setup failed: Error @ http://localhost:5173/src/lib/push.ts?t=1775083349632:20
+[    4301ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[    9398ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[   15119ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[   20566ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[   25660ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[   30752ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[   35839ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[   40932ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[   46040ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[   51127ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[   56226ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[   61323ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[   66411ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[   71508ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[   76623ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[   81708ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[   86802ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[   91900ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[   96990ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  102078ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  107177ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  112269ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  117362ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  122462ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  127555ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  132752ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  137860ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  142956ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  148064ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  153175ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  158273ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  163362ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  168480ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  173636ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  178722ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  183820ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  188935ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  194028ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  199130ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  204230ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  209317ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  214407ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  219497ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  224587ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  229690ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  234774ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  239861ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  244959ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  250057ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  255156ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  260271ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  265356ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  270444ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  275535ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  280620ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  285701ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  290811ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  295905ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  300994ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  306089ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  311532ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  316623ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  321722ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  326806ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  331903ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  336996ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  342092ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  347180ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  352281ms] [ERROR] STOMP error: Failed to send message to ExecutorSubscribableChannel[clientInboundChannel] @ http://localhost:5173/src/lib/websocket.ts?t=1775083349619:42
+[  357286ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5173/ws." {file: "http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86" line: 1107}] @ http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86:1107
+[  362292ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5173/ws." {file: "http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86" line: 1107}] @ http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86:1107
+[  367298ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5173/ws." {file: "http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86" line: 1107}] @ http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86:1107
+[  372306ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5173/ws." {file: "http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86" line: 1107}] @ http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86:1107
+[  377312ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5173/ws." {file: "http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86" line: 1107}] @ http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86:1107
+[  382318ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5173/ws." {file: "http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86" line: 1107}] @ http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86:1107
+[  387324ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5173/ws." {file: "http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86" line: 1107}] @ http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86:1107
+[  392328ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5173/ws." {file: "http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86" line: 1107}] @ http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86:1107
+[  397334ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5173/ws." {file: "http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86" line: 1107}] @ http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86:1107
+[  403726ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5173/ws." {file: "http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86" line: 1107}] @ http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86:1107
+[  413257ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5173/ws." {file: "http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86" line: 1107}] @ http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86:1107
+[  427551ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5173/ws." {file: "http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86" line: 1107}] @ http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86:1107
+[  448990ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5173/ws." {file: "http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86" line: 1107}] @ http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86:1107
+[  479548ms] [ERROR] [JavaScript Error: "Loading module from “http://localhost:5173/src/lib/websocket.ts?t=1775083880010” was blocked because of a disallowed MIME type (“text/html”)." {file: "http://localhost:5173/rooms/11111111-1111-1111-1111-111111111111" line: 0}] @ http://localhost:5173/rooms/11111111-1111-1111-1111-111111111111:0
+[  479548ms] [ERROR] [vite] Error @ http://localhost:5173/@vite/client:808
+[  479548ms] [ERROR] [vite] Failed to reload /src/routes/rooms/[roomId]/+page.svelte. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:808
+[  479549ms] [ERROR] [vite] Error @ http://localhost:5173/@vite/client:808
+[  479550ms] [ERROR] [vite] Failed to reload /src/routes/+layout.svelte. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:808
+[  479550ms] [WARNING] [JavaScript Warning: "Loading failed for the module with source “http://localhost:5173/src/lib/websocket.ts?t=1775083880010”." {file: "http://localhost:5173/src/routes/rooms/[roomId]/+page.svelte?t=1775083880010" line: 0}] @ http://localhost:5173/src/routes/rooms/[roomId]/+page.svelte?t=1775083880010:0
+[  479550ms] TypeError: can't access property "default", module is undefined
+
+[  484534ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5173/ws." {file: "http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86" line: 1107}] @ http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86:1107
+[  492317ms] [ERROR] [JavaScript Error: "Loading module from “http://localhost:5173/src/lib/websocket.ts?t=1775083880010” was blocked because of a disallowed MIME type (“text/html”)." {file: "http://localhost:5173/rooms/11111111-1111-1111-1111-111111111111" line: 0}] @ http://localhost:5173/rooms/11111111-1111-1111-1111-111111111111:0
+[  492318ms] [WARNING] The next HMR update will cause the page to reload @ http://localhost:5173/node_modules/.pnpm/@sveltejs+kit@2.55.0_@sveltejs+vite-plugin-svelte@6.2.4_svelte@5.55.0_vite@7.3.1_jiti@2_e81c5377ba9b49fffcc86979e80614ce/node_modules/@sveltejs/kit/src/runtime/client/client.js?v=3ceb9e86:3298
+[  492318ms] [ERROR] Error @ http://localhost:5173/@fs/home/tommykey0925/dev/chat/web/.svelte-kit/generated/client/app.js:23
+[  492319ms] [WARNING] [JavaScript Warning: "Loading failed for the module with source “http://localhost:5173/src/lib/websocket.ts?t=1775083880010”." {file: "http://localhost:5173/src/routes/+layout.svelte?t=1775083892611" line: 0}] @ http://localhost:5173/src/routes/+layout.svelte?t=1775083892611:0
+[  492320ms] TypeError: error loading dynamically imported module: http://localhost:5173/src/lib/websocket.ts?t=1775083880010
+
+[  492320ms] TypeError: error loading dynamically imported module: http://localhost:5173/src/lib/websocket.ts?t=1775083880010
+    at start (http://localhost:5173/node_modules/.pnpm/@sveltejs+kit@2.55.0_@sveltejs+vite-plugin-svelte@6.2.4_svelte@5.55.0_vite@7.3.1_jiti@2_e81c5377ba9b49fffcc86979e80614ce/node_modules/@sveltejs/kit/src/runtime/client/client.js?v=3ceb9e86:373:9)
+    at async* (http://localhost:5173/rooms/11111111-1111-1111-1111-111111111111:23:11)
+    at promise callback* (http://localhost:5173/rooms/11111111-1111-1111-1111-111111111111:22:9)
+[  506819ms] [ERROR] [JavaScript Error: "Loading module from “http://localhost:5173/src/lib/websocket.ts?t=1775083880010” was blocked because of a disallowed MIME type (“text/html”)." {file: "http://localhost:5173/rooms/11111111-1111-1111-1111-111111111111" line: 0}] @ http://localhost:5173/rooms/11111111-1111-1111-1111-111111111111:0
+[  506820ms] [WARNING] [JavaScript Warning: "Loading failed for the module with source “http://localhost:5173/src/lib/websocket.ts?t=1775083880010”." {file: "http://localhost:5173/src/routes/rooms/[roomId]/+page.svelte?t=1775083880010" line: 0}] @ http://localhost:5173/src/routes/rooms/[roomId]/+page.svelte?t=1775083880010:0
+[  506838ms] [WARNING] The next HMR update will cause the page to reload @ http://localhost:5173/node_modules/.pnpm/@sveltejs+kit@2.55.0_@sveltejs+vite-plugin-svelte@6.2.4_svelte@5.55.0_vite@7.3.1_jiti@2_e81c5377ba9b49fffcc86979e80614ce/node_modules/@sveltejs/kit/src/runtime/client/client.js?v=3ceb9e86:3298
+[  506839ms] [ERROR] Error @ http://localhost:5173/@fs/home/tommykey0925/dev/chat/web/.svelte-kit/generated/client/app.js:23
+[  506888ms] [ERROR] Push notification setup failed: Error @ http://localhost:5173/src/lib/push.ts?t=1775083349632:20
+[  517872ms] [ERROR] [vite] Error @ http://localhost:5173/@vite/client:808
+[  517873ms] [ERROR] [vite] Failed to reload /src/app.css. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:808
+[  517875ms] [WARNING] [JavaScript Warning: "Loading failed for the module with source “http://localhost:5173/src/app.css?t=1775083918288”." {file: "http://localhost:5173/@vite/client" line: 0}] @ http://localhost:5173/@vite/client:0
+[  518188ms] ReferenceError: onConnectedChange is not defined
+
+  in $effect
+  in +page.svelte
+  in +layout.svelte
+  in root.svelte
+  in undefined
+
+    at start (http://localhost:5173/node_modules/.pnpm/@sveltejs+kit@2.55.0_@sveltejs+vite-plugin-svelte@6.2.4_svelte@5.55.0_vite@7.3.1_jiti@2_e81c5377ba9b49fffcc86979e80614ce/node_modules/@sveltejs/kit/src/runtime/client/client.js?v=3ceb9e86:373:9)
+    at async* (http://localhost:5173/rooms/11111111-1111-1111-1111-111111111111:23:11)
+    at promise callback* (http://localhost:5173/rooms/11111111-1111-1111-1111-111111111111:22:9)
+[  518193ms] [ERROR] Push notification setup failed: Error @ http://localhost:5173/src/lib/push.ts?t=1775083349632:20
+[  518345ms] [ERROR] Push notification setup failed: Error @ http://localhost:5173/src/lib/push.ts?t=1775083349632:20
+[  533420ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5173/ws." {file: "http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86" line: 1107}] @ http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86:1107
+[  593963ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5173/ws." {file: "http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86" line: 1107}] @ http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86:1107

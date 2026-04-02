@@ -1,0 +1,27 @@
+- generic [ref=e2]:
+  - generic [ref=e18]:
+    - banner [ref=e19]:
+      - generic [ref=e20]:
+        - heading "# チャットルーム" [level=1] [ref=e21]
+        - link "フレンド" [ref=e22] [cursor=pointer]:
+          - /url: /friends
+      - button "新規作成" [ref=e23]
+    - main [ref=e24]:
+      - generic [ref=e25]:
+        - link "# tommykey0925 1 人 DM" [ref=e26] [cursor=pointer]:
+          - /url: /rooms/5004914e-cc03-4cf2-a7bf-f7ef79c16f90
+          - generic [ref=e28]:
+            - generic [ref=e29]:
+              - heading "# tommykey0925" [level=2] [ref=e30]
+              - generic [ref=e32]: 1 人
+            - paragraph [ref=e33]: DM
+        - link "# kaeth0925 1 2 人 DM" [ref=e34] [cursor=pointer]:
+          - /url: /rooms/7256fe4e-e87b-4761-a2d1-42ea18cf1b73
+          - generic [ref=e36]:
+            - generic [ref=e37]:
+              - heading "# kaeth0925" [level=2] [ref=e38]
+              - generic [ref=e39]:
+                - generic [ref=e40]: "1"
+                - generic [ref=e41]: 2 人
+            - paragraph [ref=e42]: DM
+  - generic [ref=e17]: Chat

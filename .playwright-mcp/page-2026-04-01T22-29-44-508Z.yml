@@ -1,0 +1,27 @@
+- generic:
+  - generic:
+    - generic:
+      - generic:
+        - banner:
+          - generic:
+            - heading "# チャットルーム" [level=1]
+            - link "フレンド":
+              - /url: /friends
+          - button "新規作成"
+        - main:
+          - generic:
+            - generic:
+              - paragraph: まだルームがありません。作成してみましょう
+  - dialog "新規ルーム作成" [ref=e16]:
+    - heading "新規ルーム作成" [level=2] [ref=e18]
+    - generic [ref=e19]:
+      - textbox "ルーム名" [ref=e20]: テストルーム
+      - textbox "説明（任意）" [ref=e21]
+      - generic [ref=e22]:
+        - button "作成" [active] [ref=e23]
+        - button "キャンセル" [ref=e24]
+    - alert [ref=e27]:
+      - generic [ref=e28]: "{\"detail\":\"Not Found\"}"
+    - button "Close" [ref=e25]:
+      - img
+      - generic [ref=e26]: Close

@@ -1,0 +1,28 @@
+- generic [ref=e2]:
+  - generic [ref=e37]:
+    - banner [ref=e38]:
+      - generic [ref=e39]:
+        - link "←" [ref=e40] [cursor=pointer]:
+          - /url: /rooms
+        - heading "# kaeth0925" [level=1] [ref=e41]
+      - generic [ref=e42]:
+        - button "検索" [ref=e43]
+        - button "退出" [ref=e44]
+    - generic [ref=e45]:
+      - generic [ref=e48]: 今日
+      - generic [ref=e50]:
+        - paragraph [ref=e52]: 新しいDMルームからのテストメッセージです
+        - generic [ref=e53]: 21:26
+      - generic [ref=e54]:
+        - paragraph [ref=e56]: てすと
+        - generic [ref=e57]: 23:45
+      - generic [ref=e58]:
+        - text: 87741a48-9041-7058-8828-5c6d57fd8555
+        - paragraph [ref=e60]: テスト
+        - generic [ref=e61]: 23:46
+    - generic [ref=e63]:
+      - button [ref=e64]:
+        - img [ref=e65]
+      - textbox "メッセージを入力..." [ref=e67]
+      - button "送信" [disabled] [ref=e68]
+  - generic [ref=e17]: Chat

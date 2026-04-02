@@ -1,0 +1,47 @@
+[    1300ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1300ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1300ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1301ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1301ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1301ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1301ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1302ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1302ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1302ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1303ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1303ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1303ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1303ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1304ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1304ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1304ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1304ms] [ERROR] Error @ http://localhost:5173/node_modules/.vite/deps/chunk-EPZGBJLV.js?v=3ceb9e86:3020
+[    1380ms] Svelte error: effect_update_depth_exceeded
+Maximum update depth exceeded. This typically indicates that an effect reads and writes the same piece of state
+https://svelte.dev/e/effect_update_depth_exceeded
+    at start (http://localhost:5173/node_modules/.pnpm/@sveltejs+kit@2.55.0_@sveltejs+vite-plugin-svelte@6.2.4_svelte@5.55.0_vite@7.3.1_jiti@2_e81c5377ba9b49fffcc86979e80614ce/node_modules/@sveltejs/kit/src/runtime/client/client.js?v=3ceb9e86:373:9)
+    at async* (http://localhost:5173/rooms/test-room-id:23:11)
+    at promise callback* (http://localhost:5173/rooms/test-room-id:22:9)
+[    2093ms] [ERROR] Push notification setup failed: Error @ http://localhost:5173/src/lib/push.ts?t=1775080977846:20
+[    2810ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5173/ws." {file: "http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86" line: 1107}] @ http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86:1107
+[    2932ms] [ERROR] Push notification setup failed: Error @ http://localhost:5173/src/lib/push.ts?t=1775080977846:20
+[   25711ms] [ERROR] Push notification setup failed: Error @ http://localhost:5173/src/lib/push.ts?t=1775080977846:20
+[   36895ms] [ERROR] Push notification setup failed: Error @ http://localhost:5173/src/lib/push.ts?t=1775080977846:20
+[   55690ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5173/ws." {file: "http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86" line: 1107}] @ http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86:1107
+[  116926ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5173/ws." {file: "http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86" line: 1107}] @ http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86:1107
+[  177503ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5173/ws." {file: "http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86" line: 1107}] @ http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86:1107
+[  237510ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5173/ws." {file: "http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86" line: 1107}] @ http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86:1107
+[  244301ms] [ERROR] [vite] Error @ http://localhost:5173/@vite/client:808
+[  244301ms] [ERROR] [vite] Failed to reload /src/routes/+layout.svelte. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:808
+[  244301ms] [WARNING] [JavaScript Warning: "Loading failed for the module with source “http://localhost:5173/src/routes/+layout.svelte?t=1775082867456”." {file: "http://localhost:5173/@vite/client" line: 0}] @ http://localhost:5173/@vite/client:0
+[  244301ms] [ERROR] [vite] Error @ http://localhost:5173/@vite/client:808
+[  244301ms] [ERROR] [vite] Failed to reload /src/app.css. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:808
+[  244301ms] [ERROR] [vite] Error @ http://localhost:5173/@vite/client:808
+[  244301ms] [ERROR] [vite] Failed to reload /src/lib/components/Toast.svelte. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:808
+[  244302ms] [ERROR] [vite] Error @ http://localhost:5173/@vite/client:808
+[  244302ms] [ERROR] [vite] Failed to reload /src/routes/rooms/+page.svelte. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:808
+[  244302ms] [WARNING] [JavaScript Warning: "Loading failed for the module with source “http://localhost:5173/src/app.css?t=1775082867456”." {file: "http://localhost:5173/@vite/client" line: 0}] @ http://localhost:5173/@vite/client:0
+[  244303ms] [WARNING] [JavaScript Warning: "Loading failed for the module with source “http://localhost:5173/src/lib/components/Toast.svelte?t=1775082867456”." {file: "http://localhost:5173/@vite/client" line: 0}] @ http://localhost:5173/@vite/client:0
+[  244303ms] [WARNING] [JavaScript Warning: "Loading failed for the module with source “http://localhost:5173/src/routes/rooms/+page.svelte?t=1775082867456”." {file: "http://localhost:5173/@vite/client" line: 0}] @ http://localhost:5173/@vite/client:0
+[  244303ms] TypeError: can't access property "default", module is undefined
+

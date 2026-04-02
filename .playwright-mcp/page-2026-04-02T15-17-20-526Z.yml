@@ -1,0 +1,13 @@
+- generic [ref=e4]:
+  - banner [ref=e5]:
+    - generic [ref=e6]:
+      - heading "# ルーム" [level=1] [ref=e7]
+      - link "フレンド" [ref=e8] [cursor=pointer]:
+        - /url: /friends
+      - link "設定" [ref=e9] [cursor=pointer]:
+        - /url: /profile
+    - generic [ref=e10]:
+      - button "+" [ref=e11]
+      - button "logout" [ref=e12]
+  - main [ref=e13]:
+    - paragraph [ref=e16]: まだルームがありません。作成してみましょう

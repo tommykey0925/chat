@@ -1,0 +1,27 @@
+[     144ms] [WARNING] The next HMR update will cause the page to reload @ http://localhost:5173/node_modules/.pnpm/@sveltejs+kit@2.55.0_@sveltejs+vite-plugin-svelte@6.2.4_svelte@5.55.0_vite@7.3.1_jiti@2_e81c5377ba9b49fffcc86979e80614ce/node_modules/@sveltejs/kit/src/runtime/client/client.js?v=3ceb9e86:3298
+[     144ms] [ERROR] Error @ http://localhost:5173/@fs/home/tommykey0925/dev/chat/web/.svelte-kit/generated/client/app.js:23
+[     146ms] Svelte error: rune_outside_svelte
+The `$state` rune is only available inside `.svelte` and `.svelte.js/ts` files
+https://svelte.dev/e/rune_outside_svelte
+
+[     146ms] Svelte error: rune_outside_svelte
+The `$state` rune is only available inside `.svelte` and `.svelte.js/ts` files
+https://svelte.dev/e/rune_outside_svelte
+    at start (http://localhost:5173/node_modules/.pnpm/@sveltejs+kit@2.55.0_@sveltejs+vite-plugin-svelte@6.2.4_svelte@5.55.0_vite@7.3.1_jiti@2_e81c5377ba9b49fffcc86979e80614ce/node_modules/@sveltejs/kit/src/runtime/client/client.js?v=3ceb9e86:373:9)
+    at async* (http://localhost:5173/rooms:23:11)
+    at promise callback* (http://localhost:5173/rooms:22:9)
+[   52398ms] [ERROR] [vite] Error @ http://localhost:5173/@vite/client:808
+[   52399ms] [ERROR] [vite] Failed to reload /src/app.css. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:808
+[   52400ms] [WARNING] [JavaScript Warning: "Loading failed for the module with source “http://localhost:5173/src/app.css?t=1775082494585”." {file: "http://localhost:5173/@vite/client" line: 0}] @ http://localhost:5173/@vite/client:0
+[   52694ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5173/ws." {file: "http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86" line: 1107}] @ http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86:1107
+[   52719ms] [ERROR] Push notification setup failed: Error @ http://localhost:5173/src/lib/push.ts?t=1775080977846:20
+[   57716ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5173/ws." {file: "http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86" line: 1107}] @ http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86:1107
+[   62723ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5173/ws." {file: "http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86" line: 1107}] @ http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86:1107
+[   66452ms] [ERROR] Push notification setup failed: Error @ http://localhost:5173/src/lib/push.ts?t=1775080977846:20
+[   66453ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5173/ws." {file: "http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86" line: 1107}] @ http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86:1107
+[   70808ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5173/ws." {file: "http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86" line: 1107}] @ http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86:1107
+[   70808ms] [ERROR] Push notification setup failed: Error @ http://localhost:5173/src/lib/push.ts?t=1775080977846:20
+[   76462ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5173/ws." {file: "http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86" line: 1107}] @ http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86:1107
+[   76462ms] [ERROR] Push notification setup failed: Error @ http://localhost:5173/src/lib/push.ts?t=1775080977846:20
+[   81472ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5173/ws." {file: "http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86" line: 1107}] @ http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86:1107
+[   86491ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5173/ws." {file: "http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86" line: 1107}] @ http://localhost:5173/node_modules/.vite/deps/@stomp_stompjs.js?v=3ceb9e86:1107

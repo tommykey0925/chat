@@ -1,0 +1,15 @@
+- generic [ref=e4]:
+  - banner [ref=e5]:
+    - generic [ref=e6]:
+      - heading "# チャットルーム" [level=1] [ref=e7]
+      - link "フレンド" [ref=e8] [cursor=pointer]:
+        - /url: /friends
+    - button "新規作成" [ref=e9]
+  - main [ref=e10]:
+    - link "# テストルーム 1 人 テスト用" [ref=e12] [cursor=pointer]:
+      - /url: /rooms/11111111-1111-1111-1111-111111111111
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - heading "# テストルーム" [level=2] [ref=e16]
+          - generic [ref=e18]: 1 人
+        - paragraph [ref=e19]: テスト用

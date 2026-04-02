@@ -1,0 +1,17 @@
+- generic [ref=e4]:
+  - banner [ref=e5]:
+    - generic [ref=e6]:
+      - link "←" [ref=e7] [cursor=pointer]:
+        - /url: /rooms
+      - heading "# kaeth0925" [level=1] [ref=e8]
+    - generic [ref=e9]:
+      - button "検索" [ref=e10]
+      - button "退出" [ref=e11]
+  - generic [ref=e13]:
+    - paragraph [ref=e15]: 新しいDMルームからのテストメッセージです
+    - generic [ref=e16]: 21:26
+  - generic [ref=e18]:
+    - button [ref=e19]:
+      - img [ref=e20]
+    - textbox "メッセージを入力..." [ref=e22]
+    - button "送信" [disabled] [ref=e23]

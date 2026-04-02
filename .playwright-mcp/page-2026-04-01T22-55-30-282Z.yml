@@ -1,0 +1,16 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]: "500"
+    - heading "Internal Error" [level=1] [ref=e5]
+  - generic [ref=e8]:
+    - generic [ref=e9]: Both UserPoolId and ClientId are required.
+    - generic [ref=e10]: "Error: Both UserPoolId and ClientId are required. at new CognitoUserPool (/home/tommykey0925/dev/expense-tracker/web/node_modules/.pnpm/amazon-cognito-identity-js@6.3.16/node_modules/amazon-cognito-identity-js/lib/CognitoUserPool.js:40:13) at /home/tommykey0925/dev/expense-tracker/web/src/lib/auth.ts:12:18 at async ESModulesEvaluator.runInlinedModule (file:///home/tommykey0925/dev/expense-tracker/web/node_modules/.pnpm/vite@7.3.1_jiti@1.21.7_lightningcss@1.32.0/node_modules/vite/dist/node/module-runner.js:913:3) at async SSRCompatModuleRunner.directRequest (file:///home/tommykey0925/dev/expense-tracker/web/node_modules/.pnpm/vite@7.3.1_jiti@1.21.7_lightningcss@1.32.0/node_modules/vite/dist/node/module-runner.js:1146:59) at async SSRCompatModuleRunner.directRequest (file:///home/tommykey0925/dev/expense-tracker/web/node_modules/.pnpm/vite@7.3.1_jiti@1.21.7_lightningcss@1.32.0/node_modules/vite/dist/node/chunks/config.js:15111:22) at async SSRCompatModuleRunner.cachedRequest (file:///home/tommykey0925/dev/expense-tracker/web/node_modules/.pnpm/vite@7.3.1_jiti@1.21.7_lightningcss@1.32.0/node_modules/vite/dist/node/module-runner.js:1053:73) at async eval (/home/tommykey0925/dev/expense-tracker/web/src/lib/stores/auth.svelte.ts:9:31) at async ESModulesEvaluator.runInlinedModule (file:///home/tommykey0925/dev/expense-tracker/web/node_modules/.pnpm/vite@7.3.1_jiti@1.21.7_lightningcss@1.32.0/node_modules/vite/dist/node/module-runner.js:913:3) at async SSRCompatModuleRunner.directRequest (file:///home/tommykey0925/dev/expense-tracker/web/node_modules/.pnpm/vite@7.3.1_jiti@1.21.7_lightningcss@1.32.0/node_modules/vite/dist/node/module-runner.js:1146:59) at async SSRCompatModuleRunner.directRequest (file:///home/tommykey0925/dev/expense-tracker/web/node_modules/.pnpm/vite@7.3.1_jiti@1.21.7_lightningcss@1.32.0/node_modules/vite/dist/node/chunks/config.js:15111:22)"
+    - generic [ref=e11]:
+      - text: Click outside, press Esc key, or fix the code to dismiss.
+      - text: You can also disable this overlay by setting
+      - code [ref=e12]: server.hmr.overlay
+      - text: to
+      - code [ref=e13]: "false"
+      - text: in
+      - code [ref=e14]: vite.config.ts
+      - text: .

@@ -1,0 +1,3 @@
+[     247ms] [ERROR] Push notification setup failed: Error @ http://localhost:5190/src/lib/push.ts?t=1775085576983:20
+[    1215ms] [ERROR] [JavaScript Error: "Firefox can’t establish a connection to the server at ws://localhost:5190/ws." {file: "http://localhost:5190/node_modules/.vite/deps/@stomp_stompjs.js?v=c33fc525" line: 1107}] @ http://localhost:5190/node_modules/.vite/deps/@stomp_stompjs.js?v=c33fc525:1107
+[   14196ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:5190/@vite/client:864
