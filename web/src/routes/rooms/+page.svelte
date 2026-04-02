@@ -94,8 +94,14 @@
 
 		{#if rooms.length === 0}
 			<Card.Root class="border-dashed">
-				<Card.Content class="py-8 text-center">
-					<p class="text-muted-foreground">まだルームがありません。作成してみましょう</p>
+				<Card.Content class="py-12 text-center">
+					<p class="text-3xl">💬</p>
+					<p class="mt-3 font-medium text-foreground">まだルームがありません</p>
+					<p class="mt-1 text-sm text-muted-foreground">フレンドを追加してチャットを始めましょう</p>
+					<div class="mt-6 flex justify-center gap-3">
+						<Button onclick={() => (showCreate = !showCreate)}>ルームを作成</Button>
+						<Button variant="outline" onclick={() => goto('/friends')}>フレンドを探す</Button>
+					</div>
 				</Card.Content>
 			</Card.Root>
 		{:else}
