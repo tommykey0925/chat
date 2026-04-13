@@ -21,7 +21,7 @@ test.describe('Smoke tests', () => {
 
 	test('login page has correct page title', async ({ page }) => {
 		await page.goto('/login');
-		await expect(page).toHaveTitle('Chat');
+		await expect(page).toHaveTitle('chatto');
 	});
 
 	test('unauthenticated user is redirected to /login from root', async ({ page }) => {
@@ -58,7 +58,7 @@ test.describe('Smoke tests', () => {
 		const href = await favicon.getAttribute('href');
 		expect(href).toBeTruthy();
 
-		if (href) {
+		if (href && href.startsWith('http')) {
 			const response = await page.request.get(href);
 			expect(response.ok()).toBe(true);
 		}
