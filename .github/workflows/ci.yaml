@@ -39,3 +39,30 @@ jobs:
 
       - name: Build web
         run: cd web && pnpm install --frozen-lockfile && pnpm build
+
+  e2e-web:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+          cache-dependency-path: web/pnpm-lock.yaml
+
+      - name: Install dependencies
+        run: cd web && pnpm install --frozen-lockfile
+
+      - name: Install Playwright browsers
+        run: cd web && pnpm exec playwright install --with-deps chromium
+
+      - name: Build and run E2E tests
+        env:
+          VITE_COGNITO_USER_POOL_ID: ap-northeast-1_qPedGpbby
+          VITE_COGNITO_CLIENT_ID: 7vsovq6esg1am78jmk3diucc3q
+        run: cd web && pnpm build && pnpm test:e2e
