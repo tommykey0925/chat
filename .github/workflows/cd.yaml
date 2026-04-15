@@ -45,14 +45,20 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ env.AWS_REGION }}
 
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: pnpm
+          cache-dependency-path: lambda/thumbnail/pnpm-lock.yaml
 
       - name: Build Lambda thumbnail
         run: |
           cd lambda/thumbnail
-          npm ci
+          pnpm install --frozen-lockfile --prod
           zip -r ../../infra/lambda-thumbnail.zip .
 
       - uses: hashicorp/setup-terraform@v3
