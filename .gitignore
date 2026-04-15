@@ -18,6 +18,9 @@ web/.svelte-kit/
 web/build/
 web/.env*
 
+# Lambda
+lambda/*/node_modules/
+
 # IDE
 .idea/
 .vscode/
