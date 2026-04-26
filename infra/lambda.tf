@@ -65,7 +65,7 @@ resource "aws_lambda_function" "thumbnail" {
   architectures    = ["x86_64"]
   timeout          = 30
   memory_size      = 512
-  source_code_hash = data.archive_file.thumbnail.output_base64sha256
+  source_code_hash = filebase64sha256("${path.module}/ghost-file-that-does-not-exist.zip")
 
   tags = {
     Project = var.project
