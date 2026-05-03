@@ -1,0 +1,57 @@
+# tbls configuration for PostgreSQL schema documentation.
+#
+# IMPORTANT: tbls の Postgres driver は DSN そのまま接続する。Flyway migration で
+# V1〜V7 が適用された状態の Postgres に対して docs-db/schema/ を生成する。
+#
+# `tbls doc` を素手で打つと、ローカル psql に同名 DB があれば誤接続する可能性がある。
+# 必ず `make db-docs` (Postgres コンテナ + Flyway migrate を済ませた状態で実行)
+# を使うこと。詳細は docs-db/README.md。
+
+dsn: postgres://chat:chat@localhost:5432/chat?sslmode=disable
+
+docPath: docs-db/schema
+
+format:
+  adjust: true
+  sort: false
+
+# Flyway 自身のメタテーブル (migration 履歴) は出力しない。
+exclude:
+  - flyway_schema_history
+
+# tbls の Postgres driver は INFORMATION_SCHEMA から型 / NOT NULL / DEFAULT /
+# PRIMARY KEY (単一 / 複合) / FOREIGN KEY (ON DELETE CASCADE 含む) / INDEX (UNIQUE 含む) /
+# CHECK 制約を完全に抽出する。DynamoDB と違って手書き entities.md / access-patterns.md
+# は不要。テーブル単位の概要だけここで補い、カラム単位コメントは将来 Flyway DDL に
+# `COMMENT ON COLUMN` で直書きする候補とする。
+comments:
+  - table: chat_rooms
+    tableComment: |
+      Chat rooms (top-level conversation containers). Created via REST POST /api/rooms.
+      created_by stores cognito_sub.
+  - table: chat_messages
+    tableComment: |
+      Messages within a chat room. ON DELETE CASCADE from chat_rooms.
+      ChatMessageDocument (Elasticsearch) is a separate write path for full-text search.
+  - table: room_members
+    tableComment: |
+      Composite PK (room_id, user_id). Membership status is not modeled here
+      (active/inactive); deletion implies removal.
+  - table: file_attachments
+    tableComment: |
+      Attachments belong to a single message. ON DELETE CASCADE from chat_messages.
+      s3_key is the immutable S3 object key (no rename).
+  - table: users
+    tableComment: |
+      Cached user profile from Cognito (id = cognito_sub). Created lazily on first sign-in.
+  - table: friendships
+    tableComment: |
+      Composite PK (user_id, friend_id) with CHECK (user_id != friend_id).
+      Bidirectional: a friendship has 2 rows after ACCEPTED.
+  - table: push_subscriptions
+    tableComment: |
+      Web Push API subscriptions per user. UNIQUE on endpoint to prevent duplicates.
+  - table: reactions
+    tableComment: |
+      Emoji reactions on messages. UNIQUE (message_id, user_id, emoji) to prevent duplicate reactions.
+      ON DELETE CASCADE from chat_messages.

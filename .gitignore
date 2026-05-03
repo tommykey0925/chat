@@ -6,6 +6,9 @@ api/bin/
 *.jar
 !api/gradle/wrapper/gradle-wrapper.jar
 
+# Local tool binaries (tbls, flyway, etc.)
+bin/
+
 # Terraform
 infra/.terraform/
 infra/*.tfstate
