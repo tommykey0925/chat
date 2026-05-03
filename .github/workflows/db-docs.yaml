@@ -1,6 +1,6 @@
 name: DB Schema Docs Drift
 
-# tbls diff で docs-db/schema/ と live PostgreSQL の差分を検出する。
+# tbls diff で docs/db/schema/ と live PostgreSQL の差分を検出する。
 # Flyway CLI で migration V1〜V7 を適用してから tbls を実行。
 
 on:
@@ -8,7 +8,7 @@ on:
     paths:
       - "api/src/main/resources/db/migration/**"
       - ".tbls.yml"
-      - "docs-db/schema/**"
+      - "docs/db/schema/**"
       - ".github/workflows/db-docs.yaml"
   workflow_dispatch:
 

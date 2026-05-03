@@ -11,7 +11,7 @@ reactions) を Flyway migration V1〜V7 で管理。
 ## ドキュメント生成
 
 ```bash
-make db-docs        # Postgres 起動 + Flyway migrate + tbls 実行 + docs-db/schema/ 再生成
+make db-docs        # Postgres 起動 + Flyway migrate + tbls 実行 + docs/db/schema/ 再生成
 make db-docs-diff   # 現状の docs と live スキーマの差分表示
 ```
 

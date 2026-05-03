@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "api/**"
+      - "docs/db/**"
   workflow_dispatch:
 
 permissions:
@@ -37,6 +38,16 @@ jobs:
           mkdir -p _site
           cp docs/swagger/index.html _site/
           cp api/build/openapi/openapi.json _site/
+
+      # Jekyll で docs/db/ を HTML 化 (tbls 出力 Markdown を Pages 上で読める形に)
+      - uses: actions/configure-pages@v5
+      - uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./docs/db
+          destination: ./_jekyll_db
+
+      - name: Merge db docs into _site
+        run: cp -r _jekyll_db _site/db
 
       - uses: actions/upload-pages-artifact@v3
 

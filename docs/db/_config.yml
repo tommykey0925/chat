@@ -1,0 +1,17 @@
+title: Chat DB Schema
+description: tbls 自動生成 (PostgreSQL 8 テーブル設計)
+theme: jekyll-theme-cayman
+markdown: kramdown
+
+# サブパス (/<repo>/db/) で配信されるため明示的に baseurl を指定。
+# 未設定だと github-metadata gem が repo 名 (/chat) を auto-set し、
+# /db/ が抜けたリンクが生成される。
+baseurl: /chat/db
+
+# .md リンクを Jekyll ビルド時に .html に自動変換 (GitHub UI 上でも .md として動くまま、Pages でも 200)
+plugins:
+  - jekyll-relative-links
+
+relative_links:
+  enabled: true
+  collections: true

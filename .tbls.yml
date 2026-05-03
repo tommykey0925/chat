@@ -1,15 +1,15 @@
 # tbls configuration for PostgreSQL schema documentation.
 #
 # IMPORTANT: tbls の Postgres driver は DSN そのまま接続する。Flyway migration で
-# V1〜V7 が適用された状態の Postgres に対して docs-db/schema/ を生成する。
+# V1〜V7 が適用された状態の Postgres に対して docs/db/schema/ を生成する。
 #
 # `tbls doc` を素手で打つと、ローカル psql に同名 DB があれば誤接続する可能性がある。
 # 必ず `make db-docs` (Postgres コンテナ + Flyway migrate を済ませた状態で実行)
-# を使うこと。詳細は docs-db/README.md。
+# を使うこと。詳細は docs/db/index.md。
 
 dsn: postgres://chat:chat@localhost:5432/chat?sslmode=disable
 
-docPath: docs-db/schema
+docPath: docs/db/schema
 
 format:
   adjust: true

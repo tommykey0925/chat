@@ -51,8 +51,8 @@ cd infra && terraform destroy
 
 ## DB スキーマドキュメント
 
-`docs-db/` に PostgreSQL スキーマドキュメント。`make db-docs` で Postgres 起動 + Flyway migrate + tbls 再生成。
-詳細: [docs-db/schema/](docs-db/schema/) (tbls 自動生成、Postgres スキーマ + ER 図)
+`docs/db/` に PostgreSQL スキーマドキュメント。`make db-docs` で Postgres 起動 + Flyway migrate + tbls 再生成。
+詳細: [docs/db/schema/](docs/db/schema/) (tbls 自動生成、Postgres スキーマ + ER 図)
 
 ## EKS クラスタ
 
