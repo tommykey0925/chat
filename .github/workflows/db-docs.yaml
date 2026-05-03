@@ -1,0 +1,61 @@
+name: DB Schema Docs Drift
+
+# tbls diff で docs-db/schema/ と live PostgreSQL の差分を検出する。
+# Flyway CLI で migration V1〜V7 を適用してから tbls を実行。
+
+on:
+  pull_request:
+    paths:
+      - "api/src/main/resources/db/migration/**"
+      - ".tbls.yml"
+      - "docs-db/schema/**"
+      - ".github/workflows/db-docs.yaml"
+  workflow_dispatch:
+
+jobs:
+  drift:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_DB: chat
+          POSTGRES_USER: chat
+          POSTGRES_PASSWORD: chat
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U chat"
+          --health-interval 5s
+          --health-timeout 3s
+          --health-retries 10
+    env:
+      PG_DSN: postgres://chat:chat@localhost:5432/chat?sslmode=disable
+      TBLS_VERSION: v1.94.5
+      FLYWAY_VERSION: 12.5.0
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Flyway CLI
+        run: |
+          curl -sSL "https://github.com/flyway/flyway/releases/download/flyway-${FLYWAY_VERSION}/flyway-commandline-${FLYWAY_VERSION}-linux-x64.tar.gz" \
+            | sudo tar -xz -C /usr/local/lib
+          sudo ln -sf /usr/local/lib/flyway-${FLYWAY_VERSION}/flyway /usr/local/bin/flyway
+          flyway --version
+
+      # NOTE: 同じ Flyway migration 適用ロジックが Makefile の db ターゲットにもある。
+      # いずれかを変更したら必ず両方を同期すること。
+      - name: Apply Flyway migrations
+        run: |
+          flyway -url=jdbc:postgresql://localhost:5432/chat \
+            -user=chat -password=chat \
+            -locations=filesystem:api/src/main/resources/db/migration \
+            migrate
+
+      - name: Install tbls
+        run: |
+          curl -sSL "https://github.com/k1LoW/tbls/releases/download/${TBLS_VERSION}/tbls_${TBLS_VERSION}_linux_amd64.tar.gz" \
+            | sudo tar -xz -C /usr/local/bin tbls
+          tbls version
+
+      - name: Check drift (tbls diff)
+        run: tbls diff "${PG_DSN}"
